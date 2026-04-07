@@ -6,81 +6,30 @@
     <title>TR. Sérénité | Tamby Rasolofondraibe</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --sapphire: #0F2C59;
-            --gold: #DAC0A3;
-            --light: #F8F0E5;
-            --white: #FFFFFF;
+        :root { --sapphire: #0F2C59; --gold: #DAC0A3; --light: #F8F0E5; --white: #FFFFFF; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--light); color: var(--sapphire); line-height: 1.6; }
+        header { 
+            background: var(--sapphire) url('logo-slogan.jpg.png') no-repeat center; 
+            background-size: cover; height: 450px; display: flex; align-items: center; justify-content: center; border-bottom: 5px solid var(--gold); 
         }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            background-color: var(--light);
-            color: var(--sapphire);
-            line-height: 1.6;
-        }
-
-        header {
-            background: var(--sapphire) url('TR SERENITE SLOGAN.jpg.jpg') no-repeat center;
-            background-size: cover;
-            height: 450px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 5px solid var(--gold);
-        }
-
-        .header-overlay {
-            background: rgba(15, 44, 89, 0.6);
-            width: 100%; height: 100%;
-            display: flex; flex-direction: column;
-            justify-content: center; text-align: center;
-            color: white; padding: 20px;
-        }
-
-        .header-overlay h1 { font-size: 3rem; margin: 0; letter-spacing: 3px; }
-        .header-overlay p { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
-
+        .header-overlay { background: rgba(15, 44, 89, 0.6); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center; color: white; padding: 20px; }
         .container { max-width: 1100px; margin: auto; padding: 3rem 5%; }
-
         .section-title { text-align: center; margin-bottom: 3rem; color: var(--sapphire); }
-        .section-title::after {
-            content: ''; display: block; width: 60px; height: 3px; background: var(--gold); margin: 10px auto;
-        }
-
+        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--gold); margin: 10px auto; }
         .about-section { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; margin-bottom: 4rem; }
         .about-image { flex: 1; min-width: 300px; }
-        .about-image img {
-            width: 100%; border-radius: 15px;
-            box-shadow: 20px 20px 0px var(--gold);
-        }
-
+        .about-image img { width: 100%; border-radius: 15px; box-shadow: 20px 20px 0px var(--gold); }
         .about-text { flex: 2; min-width: 300px; }
-
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
         .card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 4px solid var(--gold); }
         .card img { width: 100%; height: 220px; object-fit: cover; }
         .card-content { padding: 1.5rem; }
-
         .testimonial { background: var(--sapphire); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 4rem 0; border-left: 8px solid var(--gold); }
-
         .contact-box { background: var(--white); padding: 3rem; border-radius: 15px; text-align: center; border: 2px solid var(--gold); }
-
-        .btn {
-            display: inline-block; background: var(--sapphire); color: white;
-            padding: 1rem 2rem; text-decoration: none; font-weight: bold;
-            border-radius: 50px; margin: 10px; transition: 0.3s; border: none; cursor: pointer;
-        }
+        .btn { display: inline-block; background: var(--sapphire); color: white; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; border: none; cursor: pointer; }
         .btn:hover { background: var(--gold); color: var(--sapphire); transform: scale(1.05); }
-
         footer { background: var(--sapphire); color: white; text-align: center; padding: 3rem 1rem; margin-top: 4rem; }
         footer a { color: var(--gold); text-decoration: none; }
-
-        @media (max-width: 768px) {
-            .header-overlay h1 { font-size: 2rem; }
-            .about-section { text-align: center; }
-        }
     </style>
 </head>
 <body>
@@ -93,10 +42,9 @@
 </header>
 
 <div class="container">
-    
     <div class="about-section">
         <div class="about-image">
-            <img src="photo tamby.jpg.jfif" alt="Tamby Rasolofondraibe">
+            <img src="photo-profil.jpg.jfif" alt="Tamby Rasolofondraibe">
         </div>
         <div class="about-text">
             <h2 class="section-title" style="text-align: left;">Votre partenaire performance</h2>
@@ -108,24 +56,17 @@
     <h2 class="section-title">Mes Solutions Sur-Mesure</h2>
     <div class="grid">
         <div class="card">
-            <img src="retour avril.jpg.jpg" alt="Reporting et Data">
+            <img src="reporting-data.jpg.png" alt="Reporting et Data">
             <div class="card-content">
                 <h3>Morning Support</h3>
                 <p>Gestion d'emails, urgences et reporting Excel avant 11h00 (GMT+3). Commencez votre journée l'esprit libre.</p>
             </div>
         </div>
         <div class="card">
-            <img src="clarté.jpg.jpg" alt="Gestion de projet">
+            <img src="clarte-kpi.jpg.png" alt="Gestion de projet">
             <div class="card-content">
                 <h3>Project Management</h3>
                 <p>Analyse de KPIs, dashboarding et contrôle de flux. J'apporte la clarté nécessaire à vos décisions.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div style="height: 220px; background: var(--sapphire); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌍</div>
-            <div class="card-content">
-                <h3>Expertise Bilingue</h3>
-                <p>Communication fluide en Français et Anglais pour vos projets à dimension internationale.</p>
             </div>
         </div>
     </div>
@@ -137,19 +78,16 @@
 
     <div class="contact-box" id="contact">
         <h2>Prêt(e) pour la Sérénité ?</h2>
-        <p>Collaborons ensemble pour propulser votre activité.</p>
         <a href="https://www.linkedin.com/in/tamby-rasolofondraibe-4a3376127/" class="btn" target="_blank">LinkedIn</a>
         <a href="mailto:rasolofondraibetamby@gmail.com" class="btn">Email</a>
         <a href="https://wa.me/261325463885" class="btn" target="_blank">WhatsApp</a>
     </div>
-
 </div>
 
 <footer>
     <p><strong>Harivelo Tamby Iangotiana RASOLOFONDRAIBE</strong></p>
     <p>📍 Antananarivo, Madagascar | GMT+3</p>
     <p>📞 +261 32 546 38 85 | ✉️ rasolofondraibetamby@gmail.com</p>
-    <p>&copy; 2026 TR. Sérénité - Tous droits réservés.</p>
 </footer>
 
 </body>
