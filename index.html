@@ -25,7 +25,8 @@
         .card-content { padding: 1.5rem; }
         .testimonial { background: var(--sapphire); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 4rem 0; border-left: 8px solid var(--gold); }
         .contact-box { background: var(--white); padding: 3rem; border-radius: 15px; text-align: center; border: 2px solid var(--gold); }
-        .btn { display: inline-block; background: var(--sapphire); color: white; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; }
+        .btn { display: inline-block; background: var(--sapphire); color: white; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: var(--gold); color: var(--sapphire); transform: scale(1.05); }
         footer { background: var(--sapphire); color: white; text-align: center; padding: 3rem 1rem; margin-top: 4rem; }
     </style>
 </head>
@@ -42,6 +43,7 @@
             <p>Forte de ma licence en droit de l'Université CNTEMAD, j'apporte une rigueur analytique indispensable aux dirigeants ambitieux.</p>
         </div>
     </div>
+
     <h2 class="section-title">Mes Solutions Sur-Mesure</h2>
     <div class="grid">
         <div class="card">
@@ -59,18 +61,25 @@
             </div>
         </div>
     </div>
+
     <div class="testimonial">
         <p style="font-style: italic; font-size: 1.3rem;">"Allez y sans crainte... cela fait 10 ans que l'on travaille ensemble et c'est toujours un plaisir."</p>
         <p><strong>— Nicole Lecomte, Directrice des Opérations</strong></p>
     </div>
-    <div class="contact-box">
+
+    <div class="contact-box" id="contact">
         <h2>Prêt(e) pour la Sérénité ?</h2>
-        <a href="https://wa.me/261325463885" class="btn" target="_blank">Contactez-moi sur WhatsApp</a>
+        <p>Collaborons ensemble pour propulser votre activité.</p>
+        <a href="https://www.linkedin.com/in/tamby-rasolofondraibe-4a3376127/" class="btn" target="_blank">LinkedIn</a>
+        <a href="mailto:rasolofondraibetamby@gmail.com" class="btn">Email</a>
+        <a href="https://wa.me/261325463885" class="btn" target="_blank">WhatsApp</a>
     </div>
 </div>
+
 <footer>
     <p><strong>Harivelo Tamby Iangotiana RASOLOFONDRAIBE</strong></p>
     <p>📍 Antananarivo, Madagascar</p>
+    <p>📞 +261 32 546 38 85 | ✉️ rasolofondraibetamby@gmail.com</p>
 </footer>
 </body>
 </html>
