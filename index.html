@@ -8,49 +8,29 @@
     <style>
         :root { --sapphire: #0F2C59; --gold: #DAC0A3; --light: #F8F0E5; --white: #FFFFFF; }
         body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--light); color: var(--sapphire); line-height: 1.6; }
-        
-        /* HEADER - AFFICHE UNIQUEMENT TON IMAGE LOGO */
         header { 
             background: var(--sapphire) url('logo-slogan.jpg.png') no-repeat center; 
-            background-size: cover; 
-            height: 450px; 
-            display: flex; 
-            border-bottom: 5px solid var(--gold); 
+            background-size: cover; height: 450px; border-bottom: 5px solid var(--gold); 
         }
-
-        /* SUPPRESSION DU TEXTE BLANC QUI DÉRANGE */
-        .header-overlay { display: none; }
-
         .container { max-width: 1100px; margin: auto; padding: 3rem 5%; }
         .section-title { text-align: center; margin-bottom: 3rem; color: var(--sapphire); }
         .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--gold); margin: 10px auto; }
-        
         .about-section { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; margin-bottom: 4rem; }
         .about-image { flex: 1; min-width: 300px; }
-        .about-image img { 
-            width: 100%; 
-            max-width: 400px; 
-            border-radius: 15px; 
-            box-shadow: 20px 20px 0px var(--gold);
-            display: block;
-        }
-
+        .about-image img { width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 20px 20px 0px var(--gold); }
         .about-text { flex: 2; min-width: 300px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
         .card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 4px solid var(--gold); }
-        .card img { width: 100%; height: 220px; object-fit: cover; }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
         .card-content { padding: 1.5rem; }
         .testimonial { background: var(--sapphire); color: white; padding: 3rem; border-radius: 20px; text-align: center; margin: 4rem 0; border-left: 8px solid var(--gold); }
         .contact-box { background: var(--white); padding: 3rem; border-radius: 15px; text-align: center; border: 2px solid var(--gold); }
-        .btn { display: inline-block; background: var(--sapphire); color: white; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; border: none; cursor: pointer; }
-        .btn:hover { background: var(--gold); color: var(--sapphire); transform: scale(1.05); }
+        .btn { display: inline-block; background: var(--sapphire); color: white; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 50px; margin: 10px; transition: 0.3s; }
         footer { background: var(--sapphire); color: white; text-align: center; padding: 3rem 1rem; margin-top: 4rem; }
     </style>
 </head>
 <body>
-
 <header></header>
-
 <div class="container">
     <div class="about-section">
         <div class="about-image">
@@ -58,47 +38,39 @@
         </div>
         <div class="about-text">
             <h2 class="section-title" style="text-align: left;">Votre partenaire performance</h2>
-            <p><strong>10 ans d'expertise</strong> dans le secteur BPO à Madagascar. De la production à la supervision, j'ai bâti ma carrière sur une conviction : <strong>la performance naît de la sérénité</strong>.</p>
-            <p>Forte de ma licence en droit de l'Université CNTEMAD, j'apporte une rigueur analytique et une structure indispensable aux dirigeants ambitieux.</p>
+            <p><strong>10 ans d'expertise</strong> dans le secteur BPO à Madagascar. De la production à la supervision, j'ai bâti ma carrière sur une conviction : <strong>la performance naît de la sérénité.</strong></p>
+            <p>Forte de ma licence en droit de l'Université CNTEMAD, j'apporte une rigueur analytique indispensable aux dirigeants ambitieux.</p>
         </div>
     </div>
-
     <h2 class="section-title">Mes Solutions Sur-Mesure</h2>
     <div class="grid">
         <div class="card">
-            <img src="reporting-data.jpg.png" alt="Reporting et Data">
+            <img src="reporting-data.jpg.png" alt="Morning Support">
             <div class="card-content">
                 <h3>Morning Support</h3>
                 <p>Gestion d'emails, urgences et reporting Excel avant 11h00 (GMT+3).</p>
             </div>
         </div>
         <div class="card">
-            <img src="clarte-kpi.jpg.png" alt="Gestion de projet">
+            <img src="clarte-kpi.jpg.png" alt="Project Management">
             <div class="card-content">
                 <h3>Project Management</h3>
-                <p>Analyse de KPIs, dashboarding et contrôle de flux pour éclairer vos décisions.</p>
+                <p>Analyse de KPIs, dashboarding et contrôle de flux.</p>
             </div>
         </div>
     </div>
-
     <div class="testimonial">
         <p style="font-style: italic; font-size: 1.3rem;">"Allez y sans crainte... cela fait 10 ans que l'on travaille ensemble et c'est toujours un plaisir."</p>
         <p><strong>— Nicole Lecomte, Directrice des Opérations</strong></p>
     </div>
-
-    <div class="contact-box" id="contact">
+    <div class="contact-box">
         <h2>Prêt(e) pour la Sérénité ?</h2>
-        <a href="https://www.linkedin.com/in/tamby-rasolofondraibe-4a3376127/" class="btn" target="_blank">LinkedIn</a>
-        <a href="mailto:rasolofondraibetamby@gmail.com" class="btn">Email</a>
-        <a href="https://wa.me/261325463885" class="btn" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/261325463885" class="btn" target="_blank">Contactez-moi sur WhatsApp</a>
     </div>
 </div>
-
 <footer>
     <p><strong>Harivelo Tamby Iangotiana RASOLOFONDRAIBE</strong></p>
     <p>📍 Antananarivo, Madagascar</p>
-    <p>📞 +261 32 546 38 85 | ✉️ rasolofondraibetamby@gmail.com</p>
 </footer>
-
 </body>
 </html>
